@@ -1,3 +1,4 @@
+
 import tkinter as tk
 import random
 
@@ -19,13 +20,13 @@ def sortear():
     numero1 = random.randint(1, 100)
     while not is_prime(numero1):
         numero1 = random.randint(1, 100)
-    
+    numero1_label.config(text=f"Número 1: {numero1}")
+
     numero2 = random.randint(1, 100)
     while not is_prime(numero2):
         numero2 = random.randint(1, 100)
-    
-    numero1_label.config(text=f"Número 1: {numero1}")
     numero2_label.config(text=f"Número 2: {numero2}")
+
     soma_label.config(text=f"Soma: {numero1 + numero2}")
 
 # Criando a janela
